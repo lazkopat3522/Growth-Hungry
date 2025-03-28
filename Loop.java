@@ -8,13 +8,18 @@ class Solution{
         int[] inar = new int[100000];
         int[] dat = new int[100000];
         int c=0;
+        int c1=0;
+        int m=0;
         int t=in.nextInt();
         for(int i=0;i<t;i++){
             int a = in.nextInt();
             int b = in.nextInt();
             int n = in.nextInt();
-            inar[i]=n;
-            for(int j=0;j<n;j++){
+
+            inar[c1]=n+m;
+            c1++;
+            m=n;
+             for(int j=0;j<n;j++){
                 int power = (int) Math.pow(2,j);
 
                 if(j==0) {
@@ -30,7 +35,8 @@ class Solution{
         }
         for(int i=0;i<c;i++){
             System.out.print(dat[i]+" ");
-        }
 
+        }
+        System.out.println(inar[0]+" "+ inar[1]);
     }
 }
