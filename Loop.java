@@ -37,6 +37,6 @@ class Solution{
             System.out.print(dat[i]+" ");
 
         }
-        System.out.println(inar[0]+" "+ inar[1]);
+
     }
 }
