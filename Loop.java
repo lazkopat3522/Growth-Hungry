@@ -33,10 +33,17 @@ class Solution{
             }
 
         }
-        for(int i=0;i<c;i++){
-            System.out.print(dat[i]+" ");
+        for (int j=0;j<inar.length;j++) {
+
+            for (int i = 0; i < c; i++)
+            if(i==inar[j]-1){
+                System.out.println(dat[i]+" ");
+            } else
+            {
+                System.out.print(dat[i] + " ");
+
+            }
 
         }
-
     }
 }
