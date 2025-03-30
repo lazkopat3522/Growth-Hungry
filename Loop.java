@@ -24,9 +24,9 @@ class Solution{
 
                 if (j == 0) {
                     ar[j] = a + power * b;
-                } else {
+                } else
                     ar[j] = ar[j - 1] + power * b;
-                }
+
 
                 dat[c] = ar[j];
                 c++;
