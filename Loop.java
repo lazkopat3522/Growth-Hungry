@@ -15,8 +15,8 @@ class Solution {
             int b = in.nextInt();
             int n = in.nextInt();
 
-            inar[i] = n+m;
-            m=inar[i];
+            inar[i] = n + m;
+            m = inar[i];
             for (int j = 0; j < n; j++) {
                 int power = (int) Math.pow(2, j);
 
@@ -31,19 +31,16 @@ class Solution {
             }
 
         }
-
-        for(int i = 0; i < t; i++) //To see the indexes where I have to divide array
+        int d=0;
+        for (int i = 0; i < t; i++) //To see the indexes where I have to divide array
         {
-            System.out.print(inar[i]+" ");
+            for (int j = d; j < inar[i]; j++) {
+                System.out.print(dat[j] + " ");
+            }
+            System.out.println();
+            d=inar[i];
         }
 
-
-            for (int i = 0; i < c; i++) {
-                    System.out.print(dat[i] + " ");
-
-                }
-
-
-        }
+    }
 
     }
