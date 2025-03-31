@@ -15,8 +15,8 @@ class Solution {
             int b = in.nextInt();
             int n = in.nextInt();
 
-            inar[i] = n + m;
-            m = n;
+            inar[i] = n+m;
+            m=inar[i];
             for (int j = 0; j < n; j++) {
                 int power = (int) Math.pow(2, j);
 
