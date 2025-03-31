@@ -1,14 +1,13 @@
 import java.util.*;
 import java.io.*;
 
-class Solution{
-    public static void main(String []argh) {
+class Solution {
+    public static void main(String[] argh) {
         Scanner in = new Scanner(System.in);
         int[] ar = new int[100000];
         int[] inar = new int[100000];
         int[] dat = new int[100000];
         int c = 0;
-        int c1 = 0;
         int m = 0;
         int t = in.nextInt();
         for (int i = 0; i < t; i++) {
@@ -16,8 +15,7 @@ class Solution{
             int b = in.nextInt();
             int n = in.nextInt();
 
-            inar[c1] = n + m;
-            c1++;
+            inar[i] = n + m;
             m = n;
             for (int j = 0; j < n; j++) {
                 int power = (int) Math.pow(2, j);
@@ -33,21 +31,17 @@ class Solution{
             }
 
         }
+        int d = 0;
 
-        int d=0;
-        for (int i = 0; i < c; i++) {
+        for (int j = 0; j < t; j++) {
 
-            if (i == inar[d] - 1 && d<=inar.length) {
-                d++;
-                System.out.println(dat[i] + " ");
+            for (int i = d; i < inar[j]; i++) {
+                    System.out.print(dat[i] + " ");
 
+                }
+            System.out.println();
 
-        } else
-        {
-            System.out.print(dat[i] + " ");
 
         }
-
         }
     }
-}
