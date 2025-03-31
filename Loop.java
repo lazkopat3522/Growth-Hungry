@@ -35,9 +35,9 @@ class Solution {
 
         for (int j = 0; j < t; j++) {
 
-            for (int i = d; i < inar[j]; i++) {
+            for (int i = 0; i < inar[j]-1; i++) {
                     System.out.print(dat[i] + " ");
-
+                    d++;
                 }
             System.out.println();
 
