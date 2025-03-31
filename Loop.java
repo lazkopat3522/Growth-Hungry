@@ -32,7 +32,10 @@ class Solution {
 
         }
 
-
+        for(int i = 0; i < t; i++) //To see the indexes where I have to divide array
+        {
+            System.out.print(inar[i]+" ");
+        }
 
 
             for (int i = 0; i < c; i++) {
