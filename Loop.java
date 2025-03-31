@@ -31,17 +31,16 @@ class Solution {
             }
 
         }
-        int d = 0;
 
-        for (int j = 0; j < t; j++) {
 
-            for (int i = 0; i < inar[j]-1; i++) {
+
+
+            for (int i = 0; i < c; i++) {
                     System.out.print(dat[i] + " ");
-                    d++;
+
                 }
-            System.out.println();
 
 
         }
-        }
+
     }
