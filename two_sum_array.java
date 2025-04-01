@@ -8,8 +8,7 @@ public class two_sum_array {
         System.out.print("nums = [");
         while(System.in != ""){
 
-         do
-             arr[c] = sc.nextInt();
+         do arr[c] = sc.nextInt();
              c++;
 
         }
