@@ -2,11 +2,11 @@ import java.util.Scanner;
 
 public class two_sum_array {
     public static void main(String[] args) {
-        long int[] arr = new long int[10000000000];
+        int[] arr = new int[10000000];
         Scanner sc=new Scanner(System.in);
         int c=0;
         System.out.print("nums = [");
-        while(System.in != "]"){
+        while(System.in != ""){
 
          do
              arr[c] = sc.nextInt();
